@@ -7,3 +7,17 @@ header {
    display: flex;
    justify-content: space-between;
 }
+
+#main-img img {
+    width: 150px;
+    height: 150px;
+}
+
+main {
+    display: flex;
+}
+
+#ctn-page {
+    margin: auto;
+    width: 80%;  
+}
