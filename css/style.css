@@ -4,23 +4,35 @@
     font-family: "Montserrat", sans-serif;
 }
 
-header {
-   display: flex;
-   justify-content: space-between;
-   margin: 30px auto;
-   
-}
-
-#main-img img {
-    width: 150px;
-    height: 150px;
-}
-
-main {
-    display: flex;
-}
+/* Body */
 
 #ctn-page {
     margin: auto;
     width: 80%;  
 }
+
+/* Header */
+
+header {
+   display: flex;
+   justify-content: space-between;
+   margin: 15px auto 30px auto;
+}
+
+/* Main */
+
+main {
+    display: flex;
+    margin: auto;
+    width: 60%;
+}
+
+#main-img img {
+    width: 300px;
+    height: 200px;
+}
+
+#main-form h1{
+    font-size: 25px;
+}
+
