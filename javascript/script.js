@@ -12,7 +12,7 @@ userName.addEventListener("keyup", () => {
     arrayUsername.push(userName.value)
     arrayUsername.slice(-1); //last item from array
     arrayUsername.forEach((element) => {
-    if(element.includes("@" || element.lenght > 5)) body.style.backgroundColor = "red";
+    if(element.includes("@" || element.lenght > 5)) 
     fieldReq1.style.display = "block";
     fieldReq2.style.display = "block";
     })
