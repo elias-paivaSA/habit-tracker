@@ -31,7 +31,6 @@ header p{
 
 main {
     display: flex;
-    
     margin: auto;
     width: 95%;
     justify-content: space-between;
@@ -46,9 +45,16 @@ main {
     font-size: 20px;
 }
 
-#main-form p{
+#main-form-title1{
     font-size: 14px;
     margin-bottom: 15px;
+}
+
+#fieldReq1, #fieldReq2 {
+    font-weight: 500;
+    max-width: 80%;
+    font-size: 12px;
+    margin-bottom: 10px;
 }
 
 form input {
@@ -63,15 +69,16 @@ form input {
     left: 90px;
 }
 
+form p {
+    font-size: 46px;
+}
+
 form button {
     margin: 10px 0 15px 0;
     margin-top: 10px;
     margin-left: 15px;
     padding: 10px 9px 0px 6px;
-}
-
-button {
-   background-color: rgb(220,188,172);
+    background-color: rgb(220,188,172);
 }
 
 
