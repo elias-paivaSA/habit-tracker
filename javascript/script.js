@@ -16,10 +16,18 @@ userName.addEventListener("keyup", () => {
     console.log(lastItemArray);
     arrayOneItem.forEach((element) => {
         const numberCharachter = element.join("").length;
-    if(numberCharachter > 5) {
-        console.log(`teste`);
-        fieldReq1.style.display = "block";
-        fieldReq2.style.display = "block";  
-    }
+        const check = element.join("");
+
+        if(check.includes("e")) {
+            console.log("teste"); 
+        }
+
+        if(numberCharachter > 6) {
+            console.log("teste");
+            fieldReq1.style.display = "block";
+            fieldReq2.style.display = "block";  
+        }
     })
 })
+
+//regex.element.join("") == false
