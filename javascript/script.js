@@ -15,8 +15,9 @@ userName.addEventListener("keyup", () => {
     const lastItemArrayToArray = arrayOneItem.push(lastItemArray);
     console.log(lastItemArray);
     arrayOneItem.forEach((element) => {
-    if(element) {
-        console.log(element);
+        const numberCharachter = element.join("").length;
+    if(numberCharachter > 5) {
+        console.log(`teste`);
         fieldReq1.style.display = "block";
         fieldReq2.style.display = "block";  
     }

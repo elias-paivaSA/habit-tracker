@@ -51,9 +51,11 @@ main {
 }
 
 #fieldReq1, #fieldReq2 {
+    display: none;
     font-weight: 500;
     max-width: 80%;
     font-size: 12px;
+    margin-left: 17px;
     margin-bottom: 10px;
 }
 
