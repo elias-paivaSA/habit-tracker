@@ -13,17 +13,11 @@ userName.addEventListener("keyup", () => {
     arrayUsername.push(userName.value)
     const lastItemArray = arrayUsername.slice(-1);
     const lastItemArrayToArray = arrayOneItem.push(lastItemArray);
-    console.log(lastItemArray);
     arrayOneItem.forEach((element) => {
-        const numberCharachter = element.join("").length;
-        const check = element.join("");
-
-        if(check.includes("e")) {
-            console.log("teste"); 
-        }
-
-        if(numberCharachter > 6) {
-            console.log("teste");
+        const numberOfCharachters = element.join("").length;
+        console.log(numberOfCharachters);
+        if(numberOfCharachters > 1) {
+        .removeAttribute('disabled');
             fieldReq1.style.display = "block";
             fieldReq2.style.display = "block";  
         }
