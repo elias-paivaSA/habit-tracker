@@ -26,13 +26,11 @@ userName.addEventListener("keyup", () => {
 })
 
 password.addEventListener("keyup", () => {
-    const passwordValue = password.value;
     const passwordLength = password.value.length;
     const userNameLength = userName.value.length;
     if(userNameLength && passwordLength) {
-        console.log("oi");
         fieldReq2.style.display = "block";
-        btnLogin.setAttribute
+        btnLogin.removeAttribute("disabled");
     }
     const lastItemArray = arrayUsername.slice(-1);
     arrayOneItem.push(lastItemArray);
