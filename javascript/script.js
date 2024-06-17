@@ -5,6 +5,8 @@ const fieldReq1 = document.getElementById("fieldReq1");
 
 const arrayUsername = [];
 const arrayOneItem = [];
+const passwordArray = [];
+const lastPassword = [];
 
 userName.addEventListener("keyup", () => {
     arrayUsername.push(userName.value)
@@ -21,6 +23,14 @@ userName.addEventListener("keyup", () => {
             btnLogin.setAttribute("disabled", "");
         }
     })
+})
+
+password.addEventListener("keyup", () => {
+    const passwordValue = password.value
+    const lastPassword = passwordValue.slice(-1);
+    console.log(lastPassword);
+    const lastItemArray = arrayUsername.slice(-1);
+    arrayOneItem.push(lastItemArray);
 })
 
 //regex.element.join("") == false
