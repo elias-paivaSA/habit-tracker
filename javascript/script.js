@@ -17,6 +17,7 @@ userName.addEventListener("keyup", () => {
         const numberOfCharachters = element.join("").length;
         console.log(numberOfCharachters);
         if(numberOfCharachters > 1) {
+            console.log(btnLogin);
             btnLogin.removeAttribute('disabled');
             fieldReq1.style.display = "block";
             fieldReq2.style.display = "block";  
