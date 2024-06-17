@@ -17,13 +17,12 @@ userName.addEventListener("keyup", () => {
     const userNameLength = userName.value.length;
     arrayOneItem.forEach((element) => {
         const numberOfCharachters = element.join("").length;
-        if(numberOfCharachters) {
-            fieldReq1.style.display = "block";
-        }
+        if(numberOfCharachters > 0) fieldReq1.style.display = "block";
         if(numberOfCharachters < 1) {
             fieldReq1.style.display = "none";
+            btnLogin.setAttribute("disabled", true);
         }
-         if(userNameLength && passwordLength > 3) {
+        if(userNameLength && passwordLength) {
         fieldReq2.style.display = "block";
         btnLogin.removeAttribute("disabled");
     }
@@ -33,11 +32,13 @@ userName.addEventListener("keyup", () => {
 password.addEventListener("keyup", () => {
     const passwordLength = password.value.length;
     const userNameLength = userName.value.length;
-    if(userNameLength && passwordLength > 3) {
+    if(userNameLength && passwordLength) {
         fieldReq2.style.display = "block";
         btnLogin.removeAttribute("disabled");
     }
-    const lastItemArray = arrayUsername.slice(-1);
-    arrayOneItem.push(lastItemArray);
+    if(passwordLength < 1) {
+        fieldReq1.style.display = "none";
+        btnLogin.setAttribute("disabled", true);
+    }
 })
 
