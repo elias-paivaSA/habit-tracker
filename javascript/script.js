@@ -17,8 +17,8 @@ userName.addEventListener("keyup", () => {
             fieldReq1.style.display = "block";
         }
         if(numberOfCharachters < 1) {
-            btnLogin.removeAttribute('disabled');
             fieldReq1.style.display = "none";
+            btnLogin.setAttribute("disabled", "");
         }
     })
 })
