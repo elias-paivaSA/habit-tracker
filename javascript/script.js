@@ -23,7 +23,7 @@ userName.addEventListener("keyup", () => {
         if(numberOfCharachters < 1) {
             fieldReq1.style.display = "none";
         }
-         if(userNameLength && passwordLength) {
+         if(userNameLength && passwordLength > 3) {
         fieldReq2.style.display = "block";
         btnLogin.removeAttribute("disabled");
     }
@@ -33,7 +33,7 @@ userName.addEventListener("keyup", () => {
 password.addEventListener("keyup", () => {
     const passwordLength = password.value.length;
     const userNameLength = userName.value.length;
-    if(userNameLength && passwordLength) {
+    if(userNameLength && passwordLength > 3) {
         fieldReq2.style.display = "block";
         btnLogin.removeAttribute("disabled");
     }
