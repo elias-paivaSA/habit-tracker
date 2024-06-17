@@ -13,15 +13,20 @@ userName.addEventListener("keyup", () => {
     arrayUsername.push(userName.value)
     const lastItemArray = arrayUsername.slice(-1);
     arrayOneItem.push(lastItemArray);
+    const passwordLength = password.value.length;
+    const userNameLength = userName.value.length;
     arrayOneItem.forEach((element) => {
         const numberOfCharachters = element.join("").length;
-        console.log(numberOfCharachters);
         if(numberOfCharachters) {
             fieldReq1.style.display = "block";
         }
         if(numberOfCharachters < 1) {
             fieldReq1.style.display = "none";
         }
+         if(userNameLength && passwordLength) {
+        fieldReq2.style.display = "block";
+        btnLogin.removeAttribute("disabled");
+    }
     })
 })
 
