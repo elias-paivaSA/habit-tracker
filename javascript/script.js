@@ -37,8 +37,12 @@ password.addEventListener("keyup", () => {
         btnLogin.removeAttribute("disabled");
     }
     if(passwordLength < 1) {
-        fieldReq1.style.display = "none";
+        fieldReq2.style.display = "none";
         btnLogin.setAttribute("disabled", true);
     }
+})
+
+btnLogin.addEventListener("click", () => {
+
 })
 
