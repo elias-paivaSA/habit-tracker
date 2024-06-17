@@ -50,7 +50,7 @@ main {
     margin-bottom: 15px;
 }
 
-#fieldReq1{
+#fieldReq1, #fieldReq2{
     display: none;
     font-weight: 500;
     max-width: 80%;
@@ -69,10 +69,6 @@ form input {
 ::placeholder {
     position: absolute;
     left: 90px;
-}
-
-form p {
-    font-size: 46px;
 }
 
 form button {
