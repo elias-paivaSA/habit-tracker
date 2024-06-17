@@ -27,8 +27,10 @@ userName.addEventListener("keyup", () => {
 
 password.addEventListener("keyup", () => {
     const passwordValue = password.value
-    const lastPassword = passwordValue.slice(-1);
-    console.log(lastPassword);
+    const passwordLength = password.value.length;
+    if(passwordLength > 3) {
+        console.log("oi");
+    }
     const lastItemArray = arrayUsername.slice(-1);
     arrayOneItem.push(lastItemArray);
 })
