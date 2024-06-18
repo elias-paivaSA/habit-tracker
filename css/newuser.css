@@ -3,3 +3,10 @@
     margin: 0;
     padding: 0;
 }
+
+#ctn-page {
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+

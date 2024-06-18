@@ -14,7 +14,7 @@ userName.addEventListener("keyup", () => {
         }
         if(userNameLength && passwordLength) {
         fieldReq2.style.display = "block";
-        btnLogin.removeAttribute("disabled");
+        btnLogin.removeAttribute("disabled");  
     }
     })
 
