@@ -2,6 +2,7 @@
     background-color: rgb(236,236,236);
     margin: 0;
     padding: 0;
+    font-family: "Montserrat", sans-serif;
 }
 
 
@@ -17,6 +18,16 @@ main {
     margin-bottom: 15px;
 }
 
+#main-page #first-p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#main-page #second-p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -30,4 +41,6 @@ input {
 }
 
 button {
+    padding: 10px;
+    border-radius: 10px;
 }
