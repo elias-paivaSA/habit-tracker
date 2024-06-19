@@ -4,9 +4,30 @@
     padding: 0;
 }
 
-#ctn-page {
-    width: 80%;
-    margin: auto;
+
+main {
     display: flex;
+    width: 80%;
+    margin: 30px auto 0 auto;
+    flex-direction: column;
+    align-items: center;
 }
 
+#main-page{
+    margin-bottom: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin:auto;
+}
+
+input {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+button {
+}
