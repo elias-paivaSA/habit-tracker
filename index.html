@@ -1,47 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Habit Tracker</title>
-</head>
-<body id="body">
-    <div id="ctn-page">
-        <header>
-            <p id="logo-name">Elias Paiva</p>
-            <p id="create-user">Novo Usuário?<span><a href=""></a> Se Inscreva</span></p>
-        </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page - Habit Tracker</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100">
+    <header class="bg-gray-800 text-white p-8">
+      <div class="max-w-7x1 mx-auto flex justify-between items-center">
+        <div>Habit Tracker</div>
+        <ul class="flex space-x-4">
+          <li>Login</li>
+          <li>||</li>
+          <li>Se Inscreva</li>
+        </ul>
+      </div>
+    </header>
 
-        <main>
-            <div id="main-img">
-                <img src="/img/couple.webp" alt="Imagem Ilustrativa">
+    <main class="flex items-center justify-center p-8 bg-gray-100 min-h-screen">
+            <div class="w-1/2">
+                <img src="/img/couple.webp" alt="" class="w-full h-auto rounded-lg shadow-lg">
             </div>
 
-            <div id="main-form">
-                <h1>Bem Vindo!</h1>
-                <p id="main-form-title1">Faça login para continuar</p>
-                <form>
-                    <i class="fa fa-solid fa-user icon1"></i>
-                    <input type="text" id="uname" name="uname" placeholder="Seu Usuário"  maxlength="7"><br>
-                    <div class="form-requeriments">
-                        <p id="fieldReq1" class="fieldReq1">- Nome de usuário deve ter no máximo 7 caracteres</p>
-                    </div>
-                    <i class="fa fa-solid fa-lock icon2"></i>
-                    <input type="password" id="pass" name="password" minlength="4" maxlength="8"placeholder="Sua Senha">
-                    <div class="form-requeriments">
-                        <p id="fieldReq2" class="fieldReq1">- A senha deve ter no máximo 8 caracteres</p>
-                    </div>
-                    <button id="btn-login" disabled>Login</button>
-                    <button><span id="btn-fgt-password">Esqueceu sua senha?</span></button>
+            <div class="w-1/2 p-8">
+                <form action="" class="space-y-6">
+                    <input type="text" placeholder="Usuário" class="w-full p-4 text-lg rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" id="user">
+                    <input type="password" placeholder="Senha" class="w-full p-4 text-lg rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" id="password">
+                    <button type="submit" class="w-full bg-blue-600 text-white text-lg font-semibold py-3 rounded-md hover:bg-blue-700 transition" id="button">  Entrar
+                    </button>
                 </form>
-            </div>
-        </main>
-    </div>
-    <script src="javascript/script.js"></script>
-</body>
+            </div>  
+    </main>
+
+    <footer class="text-center text-gray-500 py-4">
+        © 2025 Habit Tracker
+    </footer>
+    <script src="/javascript/login.js"></script>
+  </body>
 </html>
